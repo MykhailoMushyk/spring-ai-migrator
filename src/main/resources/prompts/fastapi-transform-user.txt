@@ -1,0 +1,2 @@
+Input MigrationSpec JSON:
+{{spec}}

@@ -1,0 +1,23 @@
+migrator:
+  mode: AUTO
+  maxChunkSize: 12
+  includeTests: false
+  useAi: true
+  cacheDir: .migrator-cache
+  moduleSearchDepth: 6
+
+spring:
+  main:
+    web-application-type: none
+  ai:
+    openai:
+      base-url: http://127.0.0.1:1234
+      api-key: lm-studio
+      chat:
+        options:
+          model: mistralai/devstral-small-2-2512
+          temperature: 0
+
+logging:
+  level:
+    ai.migrator: INFO
